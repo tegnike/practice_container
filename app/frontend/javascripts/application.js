@@ -16,3 +16,7 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
+
+import 'stylesheets/application';
+import 'javascripts/application';
+require.context('../images', true, /\.(png|jpg|jpeg|svg)$/);
