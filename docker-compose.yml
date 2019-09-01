@@ -35,6 +35,7 @@ services:
     tty: true
     links:
       - db
+      - redis
   spring:
     <<: *app
     command: bundle exec spring server
